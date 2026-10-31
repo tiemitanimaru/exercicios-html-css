@@ -3,32 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte</h2>
-    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
-    <pre>
-        <code>
-    num = int(input('Digite um número:'))
-    if num % 2 == 0:
-        print(f'O número {num} é PAR')
-    else:
-        print(f'O número {num} é ÍMPAR)
-        </code>
-    </pre> <!-- Seleciona apenas o codigo, SHIFT + TAB, ou TAB-->
-    <h2>Citações simples</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
-    <h2>Citações completas</h2>
-    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:
-    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_For_Dummies/oWkeeH6ik1MC?hl=pt-BR&gbpv=1&dq=html+para+leigos+jeff+noble&printsec=frontcover">
-        HTML is Hypetex Markup Language, a notation developed in the late 1980s and early 1990s for describing Web Pages.
-        </blockquote>
-    </p>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
-    <h2>Texto invertido</h2>
-    <p><bdo dir="rtl">"Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="i">  <!--a: a)b)c).....A:A)B)C)...i)i)ii)iii)iv) I= I)II)III)-->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar
+        <li>Ir para o trabalho
+        <li>Voltar para a casa
+        <li>Jantar
+        <li>dormir
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul type="square"> <!--disc circle square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Toamate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas:</li>
+        <ol type="a" start="5"> <!--o start apesar de alfanumerico, nao aceita letras, por isso letra e, seria o  5 conforme o exemplo-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos Favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros
+             <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Level</li>
+            </ul>
+        <li>Ninja Gaiden
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>Playstation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <!--<dt>Termo</dt>
+        <dd>Descrição</dd>-->
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Limnguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
 </body>
 </html>
